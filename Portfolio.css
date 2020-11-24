@@ -1,0 +1,188 @@
+@import "https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap";
+@import "https://use.fontawesome.com/releases/v5.8.2/css/all.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #0be881;
+    font-family: "Architects Daughter", cursive;
+}
+
+ul {
+    list-style: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+nav {
+    background-color:  rgb(255, 221, 89, 0.8);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 2rem;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 1.7rem;
+    padding: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li:hover {
+    transform: scale(1.6);
+    transition: 0.2s ease-out;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.welcome-header {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.welcome-header-text {
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 2rem;
+}
+
+.project-header {
+    max-width: 640px;
+    margin: 0 auto 10rem auto;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#projects {
+    background-color: rgb(236, 240, 241);
+    padding: 10rem 0rem 10rem 0rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.project-tile:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-out;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 221, 89);
+    border-radius: 5%;
+    text-align: center;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 95vh;
+}
+
+#contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+#contact h2 {
+    font-size: 4rem;
+    max-width: 640px;
+    margin: 0 auto 10rem auto;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.contact-details {
+    font-size: 3.5rem; 
+    padding-left: 2rem;
+}
+
+#profile-link:hover{
+    color: rgb(236, 240, 241);
+  }
+
+footer {
+    background-color: rgb(255, 221, 89);
+    font-weight: 300;
+    font-size: 1.5rem; 
+    text-align: right;
+    padding: 1rem;
+  }
+
+@media (max-width: 1000px) {
+    .projects-grid {
+        grid-gap: 2rem;
+        padding: 0 2rem 0 3rem;
+    }
+    html {
+        font-size: 60%;
+      }
+    nav {
+        justify-content: center;
+    }
+    nav ul li a {
+        font-size: 2.5rem;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    .contact-details {
+        display: flex;
+        justify-content: flex-end;
+        justify-content: center;
+        padding: 2rem;
+    }
+}
